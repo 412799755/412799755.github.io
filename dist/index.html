@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN" style="font-size: 16px">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>v-scroll demo</title>
+
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #e5e5e5;
+        font-family:
+          "Segoe UI",
+          "PingFang SC",
+          "Microsoft YaHei",
+          system-ui,
+          sans-serif;
+      }
+
+      .demo-box {
+        width: min(420px, 80vw);
+        height: min(560px, 80vh);
+      }
+    </style>
+    <script type="importmap">
+      {
+        "imports": {
+          "$/": "/theme/"
+        }
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-e56bc5dc.js"></script>
+  </head>
+  <body>
+    <div class="demo-box">
+      <v-scroll id="app"></v-scroll>
+    </div>
+    
+  </body>
+</html>
